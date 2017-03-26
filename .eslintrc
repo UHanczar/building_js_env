@@ -1,0 +1,14 @@
+{
+  "extends": ["airbnb", "eslint:recommended"],
+
+  "env": {
+    "browser": true,
+    "node": true
+  },
+
+  "rules": {
+    "no-console": 0,
+    "no-confusing-arrow": 0,
+    "import/no-extraneous-dependencies": "off"
+  }
+}

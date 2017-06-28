@@ -15,4 +15,7 @@ app.use(require('webpack-dev-middleware') (compiler, {
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../src/index.html')));
 
+// for http request instance
+app.get('/users', (req, res) => res.json([{'firstName': 'Bob', 'lastName': 'Smith', 'email': 'bs@gmail.com'}, {'firstName': 'Bill', 'lastName': 'Johnson', 'email': 'bj@gmail.com'}, {'firstName': 'Ric', 'lastName': 'Castello', 'email': 'rc@gmail.com'}]));
+
 app.listen(port, err => err ? console.log(err) : open(`http://localhost:${port}`));
